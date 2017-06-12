@@ -2,7 +2,6 @@ Cython==0.25.2
 envparse==0.2.0
 falcon==1.2.0
 gunicorn==19.7.1
-pkg-resources==0.0.0
 python-mimeparse==1.6.0
 six==1.10.0
 ujson==1.35
