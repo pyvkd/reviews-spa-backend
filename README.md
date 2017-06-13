@@ -25,7 +25,7 @@ gunicorn app:app
 
 site-nginx.conf : 
 
-`conf
+`
  server {
  ..
  location /api/v1/review {
