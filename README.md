@@ -8,11 +8,13 @@ How to use:
 `shell
 pip install -r requirements.txt
 `
+
 2. Setup the sqlite db:
 
 `shell
 python createdb.py
 `
+
 3. Run the app with gunicorn
 
 `shell
