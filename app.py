@@ -13,7 +13,7 @@ TABLENAME = env('TABLENAME')
 
 class AuthMiddleware(object):
     def process_request(self, req, resp):
-        print(req.headers)
+        print(req)
         token = req.get_header('Authorization')
         account_id = req.get_header('Account-ID')
 
@@ -139,4 +139,4 @@ app = falcon.API(middleware=[
 ])
 
 app.add_route('/api/v1/review/', review)
-app.add_route('/api/v1/review/{tid}', review)
+app.add_route('/api/v1/review/{tid}/', review)
