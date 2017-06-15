@@ -13,7 +13,7 @@ TABLENAME = env('TABLENAME')
 
 class AuthMiddleware(object):
     def process_request(self, req, resp):
-        print(req)
+        print(req.uri)
         token = req.get_header('Authorization')
         account_id = req.get_header('Account-ID')
 
